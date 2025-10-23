@@ -1,0 +1,23 @@
+Creazione Tabella per  per memorizzare tutti i dati riguardanti delle auto usate messe in vendita da un concessionario 
+
+CARS 
+  
+ID               -- INT             -- UNIQUE, NOTNULL, AUTOINCREMENT    -- PRIMARY KEY
+VIN	             -- VARCHAR(17)	    -- UNIQUE, NOTNULL                   -- INDEX
+(Vehicle Identification Number (Telaio), univoco a livello mondiale)
+
+MARCA	         -- VARCHAR(50)     -- NOTNULL
+MODELLO          -- VARCHAR(50)     -- NOTNULL
+CATEGORIA        -- VARCHAR (50)	-- NULL        (Versione specifica del modello)
+IMMATRICOLAZIONE	-- DATE	        -- NOTNULL
+COLORE_ESTERNO	 -- VARCHAR	        -- NULL
+COLORE_INTERNO	 -- VARCHAR	        -- NULL
+NUMERO_PORTE	 -- TYNINT	        -- NULL
+CHILOMETRAGGIO   -- INT	                -- NOTNULL
+TIPO_CARBURANTE	 -- ENUM/VARCHAR(30)	-- NOTNULL, DEFAULT("Benzina")
+CILINDRATA       -- INT                 -- NOTNULL
+POTENZA          -- INT                 -- NOTNULL 
+TIPO_CAMBIO	     -- ENUM/VARCHAR(30)	-- NOTNULL, DEFAULT("Manuale").
+CLASSE_AMBIENTALE  -- ENUM/VARCHAR(20)	-- NOTNULL
+CONDIZIONE	     -- VARCHAR(50)	        -- NULL
+ULTIMA-REVISIONE --	DATE	            -- NOTNULL
