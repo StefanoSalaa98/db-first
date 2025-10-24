@@ -3,9 +3,7 @@ Creazione Tabella per  per memorizzare tutti i dati riguardanti delle auto usate
 CARS 
   
 ID               -- INT             -- UNIQUE, NOTNULL, AUTOINCREMENT    -- PRIMARY KEY
-VIN	             -- VARCHAR(17)	    -- UNIQUE, NOTNULL                   -- INDEX
-(Vehicle Identification Number (Telaio), univoco a livello mondiale)
-
+NUMERO DI TELAIO -- VARCHAR(17)	    -- UNIQUE, NOTNULL                   -- INDEX
 MARCA	         -- VARCHAR(50)     -- NOTNULL
 MODELLO          -- VARCHAR(50)     -- NOTNULL
 CATEGORIA        -- VARCHAR (50)	-- NULL        (Versione specifica del modello)
@@ -21,3 +19,5 @@ TIPO_CAMBIO	     -- VARCHAR(30)	    -- NOTNULL, DEFAULT("Manuale").
 CLASSE_AMBIENTALE  -- VARCHAR(20)	-- NOTNULL
 CONDIZIONE	     -- VARCHAR(50)	    -- NULL
 ULTIMA-REVISIONE   -- DATE	    -- NOTNULL
+STATO_INVENTARIO --	ENUm/VARCHAR(20) --NOTNULL (Es. Disponibile, In preparazione, Venduta, In Trattativa).
+PREZZO           -- INT             -- NOTNULL
